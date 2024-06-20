@@ -26,6 +26,8 @@ vim.g.mapleader = " "
 set.softtabstop = 4  -- Number of spaces that a <Tab> counts for while performing editing operations
 set.autoindent = true  -- Copy indent from the current line when starting a new line
 set.smartindent = true  -- Insert indents automatically
+set.number = true  -- Show line numbers
+set.relativenumber = true  -- Show relative line numbers
 
 -- Lazy loading
 require("lazy").setup("plugins")
