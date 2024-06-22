@@ -29,9 +29,6 @@ zinit light zsh-users/zsh-completions
 # zsh vi mode
 zinit light jeffreytse/zsh-vi-mode
 
-# set s-prefix for vi mode
-ZVM_VI_SURROUND_BINDKEY=s-prefix
-
 # Load autocomplete
 autoload -U compinit && compinit
 
@@ -43,3 +40,13 @@ if [ -f ~/.bash_aliases ]; then
     source ~/.bash_aliases
 fi
 
+setopt APPEND_HISTORY
+setopt SHARE_HISTORY
+HISTFILE=$HOME/.zhistory
+SAVEHIST=1000
+HISTSIZE=999
+setopt HIST_EXPIRE_DUPS_FIRST
+setopt EXTENDED_HISTORY
+# autocompletion using arrow keys (based on history)
+bindkey '\e[A' history-search-backward
+bindkey '\e[B' history-search-forward
