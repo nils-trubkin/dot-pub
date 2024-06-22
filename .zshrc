@@ -1,9 +1,22 @@
 # Created by newuser for 5.9
 
-# Add snap to the PATH
-export PATH=$PATH:/snap/bin
+# Add .local to the PATH
+export PATH=$PATH:~/.local/bin:~/.local/stow/bin
 export VISUAL=nvim
 export EDITOR="$VISUAL"
+
+# Work
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+export PERL5LIB=~/.local/stow/perl-modules
+
+if [ -r /etc/home/zshrc -a -d /env ]; then
+ # MWP: Use ARC environment
+ . /etc/home/zshrc
+elif [ -r $HOME/.zshrc.old ]; then
+ # fall back to legacy environment
+ . $HOME/.zshrc.old
+fi
 
 # Set the directory for the zinit plugin manager
 ZINIT_HOME="${XDG_DATA_HOME:-$HOME/.local/share}/zinit/zinit.git"
