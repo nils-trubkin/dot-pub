@@ -23,6 +23,11 @@ set.softtabstop = 4  -- Number of spaces that a <Tab> counts for while performin
 set.autoindent = true  -- Copy indent from the current line when starting a new line
 set.smartindent = true  -- Insert indents automatically
 vim.keymap.set("n", "<leader>h", ":set hlsearch!<CR>")  -- No hls
+-- Resize with Ctrl + arrow keys
+vim.keymap.set("n", "<C-Up>", ":resize -2<CR>")
+vim.keymap.set("n", "<C-Down>", ":resize +2<CR>")
+vim.keymap.set("n", "<C-Left>", ":vertical resize -2<CR>")
+vim.keymap.set("n", "<C-Right>", ":vertical resize +2<CR>")
 -- Lazy loading
 require("lazy").setup("plugins")
 
