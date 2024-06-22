@@ -3,14 +3,17 @@ publicly available dotfiles for my personal use
 
 ## Requirements
 - [GNU Stow](https://www.gnu.org/software/stow/)
+- [Tmux](https://tmux.github.io/)
+- [Git](https://git-scm.com/)
+- [Curl](https://curl.se/)
 - [Zsh](https://www.zsh.org/)
 - [Oh My Posh](https://ohmyposh.dev/)
 - [neovim](https://neovim.io/)
 
 ## Installation
-### Install requirements
+### Install requirements (example for Ubuntu)
 ```bash
-sudo apt install stow zsh neovim
+sudo apt install stow tmux git curl zsh neovim
 ```
 ### Install Oh My Posh
 ```bash
