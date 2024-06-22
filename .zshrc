@@ -16,6 +16,7 @@ fi
 
 # Source zinit
 source "$ZINIT_HOME/zinit.zsh"
+source ~/.zsh/catppuccin_mocha-zsh-syntax-highlighting.zsh
 
 zinit ice depth=1;
 
