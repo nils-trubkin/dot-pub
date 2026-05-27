@@ -1,7 +1,6 @@
 # Created by newuser for 5.9
 
 # Add snap to the PATH
-export PATH=$PATH:/snap/bin
 export VISUAL=nvim
 export EDITOR="$VISUAL"
 export CDPATH=".:..:$HOME"
@@ -54,3 +53,4 @@ setopt EXTENDED_HISTORY
 # autocompletion using arrow keys (based on history)
 bindkey '\e[A' history-search-backward
 bindkey '\e[B' history-search-forward
+
