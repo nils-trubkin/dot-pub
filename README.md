@@ -10,7 +10,13 @@ publicly available dotfiles for my personal use
 - [Oh My Posh](https://ohmyposh.dev/)
 - [neovim](https://neovim.io/)
 
-## Installation
+## Automated Installation
+### Install script
+```bash
+./install.sh
+```
+
+## Manual Installation
 ### Install requirements (example for Ubuntu)
 ```bash
 sudo apt install stow tmux git curl zsh neovim

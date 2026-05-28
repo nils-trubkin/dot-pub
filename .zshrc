@@ -1,6 +1,7 @@
 # Created by newuser for 5.9
 
 # Add snap to the PATH
+export PATH=$PATH:$HOME/.local/bin:/snap/bin
 export VISUAL=nvim
 export EDITOR="$VISUAL"
 export CDPATH=".:..:$HOME"
