@@ -5,6 +5,9 @@ return {
     local tree = require("nvim-tree")
 
     tree.setup({
+      bookmarks = {
+        persist = true,
+      },
       sort = {
           sorter = "case_sensitive",
       },

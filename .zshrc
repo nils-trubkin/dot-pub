@@ -5,6 +5,7 @@ export PATH=$PATH:$HOME/.local/bin:/snap/bin
 export VISUAL=nvim
 export EDITOR="$VISUAL"
 export CDPATH=".:..:$HOME"
+export OPENAI_API_KEY=dummy
 
 # Set the directory for the zinit plugin manager
 ZINIT_HOME="${XDG_DATA_HOME:-$HOME/.local/share}/zinit/zinit.git"
