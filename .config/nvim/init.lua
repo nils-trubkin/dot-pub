@@ -5,6 +5,12 @@ vim.g.loaded_netrwPlugin = 1
 -- ========== COLOUR ==========
 vim.opt.termguicolors = true
 
+-- ========== VIM OPTIONS ==========
+vim.g.loaded_node_provider = 0
+vim.g.loaded_perl_provider = 0
+vim.g.loaded_python3_provider = 0
+vim.g.loaded_ruby_provider = 0
+
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
   vim.fn.system({
@@ -36,5 +42,5 @@ vim.keymap.set("n", "<C-Down>", ":resize +2<CR>")
 vim.keymap.set("n", "<C-Left>", ":vertical resize -2<CR>")
 vim.keymap.set("n", "<C-Right>", ":vertical resize +2<CR>")
 -- Lazy loading
-require("lazy").setup("plugins")
+require("lazy").setup("plugins", { rocks = { enabled = false } })
 

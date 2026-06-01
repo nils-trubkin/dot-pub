@@ -94,6 +94,8 @@ pkg_install_if_missing zsh
 pkg_install_if_missing eza
 pkg_install_if_missing git
 pkg_install_if_missing curl
+pkg_install_if_missing rg
+pkg_install_if_missing fd-find
 if command -v snap &>/dev/null; then
     snap_install_if_missing nvim
 else
