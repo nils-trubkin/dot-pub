@@ -42,5 +42,5 @@ vim.keymap.set("n", "<C-Down>", ":resize +2<CR>")
 vim.keymap.set("n", "<C-Left>", ":vertical resize -2<CR>")
 vim.keymap.set("n", "<C-Right>", ":vertical resize +2<CR>")
 -- Lazy loading
-require("lazy").setup("plugins", { rocks = { enabled = false } })
+require("lazy").setup("plugins")
 
