@@ -96,11 +96,13 @@ pkg_install_if_missing git
 pkg_install_if_missing curl
 pkg_install_if_missing rg
 pkg_install_if_missing fd-find
+pkg_install_if_missing luarocks
 if command -v snap &>/dev/null; then
     snap_install_if_missing nvim
 else
     pkg_install_if_missing neovim
 fi
+sudo luarocks install jsregexp
 
 # oh-my-posh: install from official installer
 if ! command -v oh-my-posh &>/dev/null; then
