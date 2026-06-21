@@ -1,6 +1,7 @@
 return {
     "milanglacier/minuet-ai.nvim",
     enabled = false,
+    event = "VeryLazy",
     config = function()
         require("minuet").setup({
             duet = {
@@ -41,6 +42,7 @@ return {
                     },
                 },
             },
+            request_timeout=100,
             virtualtext = {
                 auto_trigger_ft = { 'python', 'lua' },
                 keymap = {
